@@ -1,8 +1,10 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-require('dotenv').config();
-const videodownload = require('./routes/videoRoutes.js');
+import express from 'express';
+import bodyParser from 'body-parser'; // Assuming body-parser is still needed
+import cors from 'cors';
+import dotenv from 'dotenv';
+dotenv.config();
+
+import videodownload  from './routes/videoRoutes.js';
 
 
 const app = express();
